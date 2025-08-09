@@ -1,3 +1,4 @@
+// Removed unused ResumeDownload import
 // import ResumeDownload from './ResumeDownload';
 import React from 'react';
 import './Resume.css';
@@ -18,20 +19,7 @@ const internships = [
   }
 ];
 
-const skills = [
-  {
-    category: 'Frontend',
-    tags: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Redux', 'Bootstrap']
-  },
-  {
-    category: 'Backend',
-    tags: ['Node.js', 'Express', 'MongoDB', 'REST APIs']
-  },
-  {
-    category: 'Other',
-    tags: ['Git', 'Figma', 'Agile', 'Unit Testing']
-  }
-];
+// Removed unused skills variable
 
 const Resume = () => {
   return (
