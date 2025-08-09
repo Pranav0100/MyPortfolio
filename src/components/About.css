@@ -1,0 +1,208 @@
+/* About Section Styles */
+.about.section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.about-text {
+  text-align: left;
+}
+
+.about-description {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  color: white;
+}
+
+.about-details {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  color: white;
+}
+
+/* Visual Section */
+.about-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.visual-container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.code-block {
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.code-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  background: #2a2a2a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ff5f56; }
+.dot.yellow { background: #ffbd2e; }
+.dot.green { background: #27ca3f; }
+
+.code-content {
+  padding: 20px;
+}
+
+.code-content pre {
+  margin: 0;
+  font-family: 'Fira Code', 'Monaco', 'Consolas', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+
+.code-content code {
+  color: #00d4aa;
+}
+
+/* Passion Section Styles */
+.passion-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-top: 4rem;
+  padding-top: 3rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.passion-content h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.passion-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.passion-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.passion-icon {
+  font-size: 1.5rem;
+}
+
+.passion-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.passion-code-block {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .passion-section {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .about-text {
+    text-align: center;
+  }
+  
+  .passion-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+  }
+  
+  .about-details {
+    font-size: 1rem;
+  }
+  
+  .visual-container {
+    max-width: 100%;
+  }
+  
+  .code-content {
+    padding: 1rem;
+  }
+  
+  .code-content pre {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-description {
+    font-size: 1.1rem;
+  }
+  
+  .about-details {
+    font-size: 0.95rem;
+  }
+  
+  .passion-item {
+    padding: 0.75rem;
+  }
+  
+  .passion-icon {
+    font-size: 1.25rem;
+  }
+  
+  .code-content pre {
+    font-size: 0.75rem;
+  }
+} 
